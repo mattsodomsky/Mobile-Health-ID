@@ -44,8 +44,16 @@
         if (!error) {
             // Do something with the found objects
             for (PFObject *object in objects) {
+                
+                NSLog(@"%@", object[@"Name_First"]);
+                NSLog(@"%@", object[@"Name_Middle"]);
+                NSLog(@"%@", object[@"Name_Last"]);
+                NSLog(@"%@", object[@"Sex"]);
+                NSLog(@"%@", object[@"DateOfBirth"]);
+                
                  NSLog(@"%@", object[@"ExternalIDValue"]);
                  NSLog(@"%@", object[@"BloodType"]);
+                
                 for (PFObject *generalAllergy in object[@"GeneralAllergies"]) {
                     NSLog(@"%@", generalAllergy[@"Description"]);
                     NSLog(@"%@", generalAllergy[@"Severity"]);
@@ -57,6 +65,34 @@
                     NSLog(@"%@", implant[@"Severity"]);
 
                 }
+                
+                for (PFObject *allergy in object[@"MedicalAllergies"]) {
+                    NSLog(@"%@", allergy[@"Description"]);
+                    NSLog(@"%@", allergy[@"Severity"]);
+                    NSLog(@"%@", allergy[@"UserSeverity"]);
+                }
+                
+                
+                for (PFObject *condition in object[@"MedicalConditions"]) {
+                    NSLog(@"%@", condition[@"Description"]);
+                    NSLog(@"%@", condition[@"Severity"]);
+                    
+                }
+                
+                for (PFObject *contact in object[@"MyContacts"]) {
+                    NSLog(@"%@", contact[@"contactName"]);
+                    NSLog(@"%@", contact[@"contactNumber"]);
+                    NSLog(@"%@", contact[@"contactRelation"]);
+                }
+                
+                for (PFObject *doctor in object[@"Physician"]) {
+                    NSLog(@"%@", doctor[@"Institution"]);
+                    NSLog(@"%@", doctor[@"PhysicianName"]);
+                    NSLog(@"%@", doctor[@"PhysicianNumber"]);
+                }
+                
+                
+                
 
             }
         } else {
