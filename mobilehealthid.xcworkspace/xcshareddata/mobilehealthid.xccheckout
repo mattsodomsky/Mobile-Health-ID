@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>67EA43EE-86BB-4EF1-BB05-883E0D47D6D1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mobilehealthid</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6EFC8FFBACDCCDD5A5C52529E42F31ACAC82F044</key>
+		<string>https://github.com/singlespeedsw/Mobile-Health-ID.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mobilehealthid.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6EFC8FFBACDCCDD5A5C52529E42F31ACAC82F044</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/singlespeedsw/Mobile-Health-ID.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6EFC8FFBACDCCDD5A5C52529E42F31ACAC82F044</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6EFC8FFBACDCCDD5A5C52529E42F31ACAC82F044</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mobilehealthid</string>
+		</dict>
+	</array>
+</dict>
+</plist>

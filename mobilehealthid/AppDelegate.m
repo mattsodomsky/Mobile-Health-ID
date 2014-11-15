@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ScanViewController.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
-@property (strong, nonatomic) UITabBarController *tbc;
 @end
 
 @implementation AppDelegate
@@ -19,19 +19,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.tbc = [[UITabBarController alloc] init];
-    self.tbc.delegate = self;
-    
+
+    [Parse setApplicationId:@"6GZJxmlAzL6j0l0jbAoeMLfABmOsFgnQndt7VxCZ"
+                  clientKey:@"L0dpSHiYQbI3fHRYoWncGIw2V9HsGKmkOTIxr3IE"];
     
     
     UIViewController *vc = [[ScanViewController alloc] initWithNibName:@"ScanViewController" bundle:nil];
 
     UINavigationController *navControllerVc = [[UINavigationController alloc] initWithRootViewController:vc];
-    
-    NSArray *viewControllers = [NSArray arrayWithObjects:navControllerVc, nil];
-    self.tbc.viewControllers = viewControllers;
 
-    self.window.rootViewController = self.tbc;
+    self.window.rootViewController = navControllerVc;
     
     [self.window makeKeyAndVisible];
     
@@ -39,17 +36,7 @@
     return YES;
 }
 
-- (BOOL)tabBarController:(UITabBarController *)theTabBarController shouldSelectViewController:(UIViewController *)viewController {
-    
-    return (self.tbc.selectedViewController != viewController);
-    
-}
 
-
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
-{
-    NSLog(@"%ld", (long)item.tag);
-}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

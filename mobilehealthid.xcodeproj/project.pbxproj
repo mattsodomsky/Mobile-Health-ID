@@ -14,6 +14,20 @@
 		2E7439B01A17A391002C34A2 /* mobilehealthidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439AF1A17A391002C34A2 /* mobilehealthidTests.m */; };
 		2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */; };
 		2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */; };
+		2E7439C51A17F95F002C34A2 /* MobileHealthIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439C31A17F95F002C34A2 /* MobileHealthIDViewController.m */; };
+		2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439C41A17F95F002C34A2 /* MobileHealthIDViewController.xib */; };
+		2E7439C81A17FA89002C34A2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439C71A17FA89002C34A2 /* Parse.framework */; };
+		2E7439CA1A17FD8E002C34A2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439C91A17FD8E002C34A2 /* CoreLocation.framework */; };
+		2E7439CC1A17FD9D002C34A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439CB1A17FD9D002C34A2 /* AudioToolbox.framework */; };
+		2E7439CE1A17FDAA002C34A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439CD1A17FDAA002C34A2 /* CFNetwork.framework */; };
+		2E7439D01A17FDB8002C34A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439CF1A17FDB8002C34A2 /* CoreGraphics.framework */; };
+		2E7439D21A17FDC8002C34A2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439D11A17FDC8002C34A2 /* libz.dylib */; };
+		2E7439D41A17FDF3002C34A2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439D31A17FDF3002C34A2 /* MobileCoreServices.framework */; };
+		2E7439D61A17FDFD002C34A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439D51A17FDFD002C34A2 /* QuartzCore.framework */; };
+		2E7439D81A17FE19002C34A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439D71A17FE19002C34A2 /* Security.framework */; };
+		2E7439DA1A17FE2D002C34A2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439D91A17FE2D002C34A2 /* StoreKit.framework */; };
+		2E7439DC1A17FE37002C34A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439DB1A17FE37002C34A2 /* SystemConfiguration.framework */; };
+		2E7439E01A18011A002C34A2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439DD1A18011A002C34A2 /* Bolts.framework */; };
 		F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +55,21 @@
 		2E7439BB1A17D6A2002C34A2 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		2E7439C21A17F95F002C34A2 /* MobileHealthIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileHealthIDViewController.h; sourceTree = "<group>"; };
+		2E7439C31A17F95F002C34A2 /* MobileHealthIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileHealthIDViewController.m; sourceTree = "<group>"; };
+		2E7439C41A17F95F002C34A2 /* MobileHealthIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileHealthIDViewController.xib; sourceTree = "<group>"; };
+		2E7439C71A17FA89002C34A2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2E7439C91A17FD8E002C34A2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E7439CB1A17FD9D002C34A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2E7439CD1A17FDAA002C34A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2E7439CF1A17FDB8002C34A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E7439D11A17FDC8002C34A2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2E7439D31A17FDF3002C34A2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2E7439D51A17FDFD002C34A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2E7439D71A17FE19002C34A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2E7439D91A17FE2D002C34A2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2E7439DB1A17FE37002C34A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E7439DD1A18011A002C34A2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilehealthid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.release.xcconfig"; sourceTree = "<group>"; };
 		FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +80,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7439DC1A17FE37002C34A2 /* SystemConfiguration.framework in Frameworks */,
+				2E7439DA1A17FE2D002C34A2 /* StoreKit.framework in Frameworks */,
+				2E7439D81A17FE19002C34A2 /* Security.framework in Frameworks */,
+				2E7439D61A17FDFD002C34A2 /* QuartzCore.framework in Frameworks */,
+				2E7439D41A17FDF3002C34A2 /* MobileCoreServices.framework in Frameworks */,
+				2E7439D21A17FDC8002C34A2 /* libz.dylib in Frameworks */,
+				2E7439D01A17FDB8002C34A2 /* CoreGraphics.framework in Frameworks */,
+				2E7439E01A18011A002C34A2 /* Bolts.framework in Frameworks */,
+				2E7439CE1A17FDAA002C34A2 /* CFNetwork.framework in Frameworks */,
+				2E7439CC1A17FD9D002C34A2 /* AudioToolbox.framework in Frameworks */,
+				2E7439CA1A17FD8E002C34A2 /* CoreLocation.framework in Frameworks */,
+				2E7439C81A17FA89002C34A2 /* Parse.framework in Frameworks */,
 				F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +109,8 @@
 		2E7439871A17A391002C34A2 = {
 			isa = PBXGroup;
 			children = (
+				2E7439DD1A18011A002C34A2 /* Bolts.framework */,
+				2E7439C71A17FA89002C34A2 /* Parse.framework */,
 				2E7439921A17A391002C34A2 /* mobilehealthid */,
 				2E7439AC1A17A391002C34A2 /* mobilehealthidTests */,
 				2E7439911A17A391002C34A2 /* Products */,
@@ -127,6 +170,7 @@
 		2E7439B91A17D62B002C34A2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E7439C11A17F93C002C34A2 /* Scan Results */,
 				2E7439BA1A17D641002C34A2 /* ID Scan */,
 			);
 			name = Modules;
@@ -142,6 +186,16 @@
 			name = "ID Scan";
 			sourceTree = "<group>";
 		};
+		2E7439C11A17F93C002C34A2 /* Scan Results */ = {
+			isa = PBXGroup;
+			children = (
+				2E7439C21A17F95F002C34A2 /* MobileHealthIDViewController.h */,
+				2E7439C31A17F95F002C34A2 /* MobileHealthIDViewController.m */,
+				2E7439C41A17F95F002C34A2 /* MobileHealthIDViewController.xib */,
+			);
+			name = "Scan Results";
+			sourceTree = "<group>";
+		};
 		458E1FDF0BC1A38A88506103 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +208,16 @@
 		CFFB1D3304A67516AFDCDE91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E7439DB1A17FE37002C34A2 /* SystemConfiguration.framework */,
+				2E7439D91A17FE2D002C34A2 /* StoreKit.framework */,
+				2E7439D71A17FE19002C34A2 /* Security.framework */,
+				2E7439D51A17FDFD002C34A2 /* QuartzCore.framework */,
+				2E7439D31A17FDF3002C34A2 /* MobileCoreServices.framework */,
+				2E7439D11A17FDC8002C34A2 /* libz.dylib */,
+				2E7439CF1A17FDB8002C34A2 /* CoreGraphics.framework */,
+				2E7439CD1A17FDAA002C34A2 /* CFNetwork.framework */,
+				2E7439CB1A17FD9D002C34A2 /* AudioToolbox.framework */,
+				2E7439C91A17FD8E002C34A2 /* CoreLocation.framework */,
 				7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */,
 			);
 			name = Frameworks;
@@ -243,6 +307,7 @@
 			files = (
 				2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */,
 				2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */,
+				2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */,
 				2E7439A11A17A391002C34A2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +362,7 @@
 				2E7439991A17A391002C34A2 /* AppDelegate.m in Sources */,
 				2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */,
 				2E7439961A17A391002C34A2 /* main.m in Sources */,
+				2E7439C51A17F95F002C34A2 /* MobileHealthIDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +477,10 @@
 			baseConfigurationReference = FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mobilehealthid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +492,10 @@
 			baseConfigurationReference = 9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = mobilehealthid/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

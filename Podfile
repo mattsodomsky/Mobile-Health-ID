@@ -4,8 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'mobilehealthid' do
-pod 'PPpdf417', '~> 3.0.0'
-
+pod 'RSBarcodes', '~> 0.1'
 end
 
 target 'mobilehealthidTests' do

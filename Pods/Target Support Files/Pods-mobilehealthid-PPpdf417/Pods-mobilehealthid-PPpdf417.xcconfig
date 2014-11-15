@@ -1,2 +1,0 @@
-PODS_MOBILEHEALTHID_PPPDF____FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/PPpdf417/pdf417.embeddedframework"
-PODS_MOBILEHEALTHID_PPPDF____OTHER_LDFLAGS = -l"c++" -l"iconv" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreVideo" -framework "OpenGLES" -framework "QuartzCore" -framework "pdf417"

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-mobilehealthid-PPpdf417.xcscheme</key>
+		<key>Pods-mobilehealthid-RSBarcodes.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>347994F22D3130D9A7EC3CAF</key>
+		<key>3C0CCB44F4B131E8F29C6809</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>465C6CA949A9A88B79936010</key>
+		<key>57E76D3D8D596F21B78F2AE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
