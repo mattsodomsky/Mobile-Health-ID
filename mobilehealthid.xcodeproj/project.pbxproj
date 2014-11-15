@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2E7439961A17A391002C34A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439951A17A391002C34A2 /* main.m */; };
 		2E7439991A17A391002C34A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439981A17A391002C34A2 /* AppDelegate.m */; };
-		2E74399C1A17A391002C34A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E74399B1A17A391002C34A2 /* ViewController.m */; };
-		2E74399F1A17A391002C34A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E74399D1A17A391002C34A2 /* Main.storyboard */; };
 		2E7439A11A17A391002C34A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439A01A17A391002C34A2 /* Images.xcassets */; };
 		2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439A21A17A391002C34A2 /* LaunchScreen.xib */; };
 		2E7439B01A17A391002C34A2 /* mobilehealthidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439AF1A17A391002C34A2 /* mobilehealthidTests.m */; };
+		2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */; };
+		2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */; };
+		F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,17 @@
 		2E7439951A17A391002C34A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E7439971A17A391002C34A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E7439981A17A391002C34A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2E74399A1A17A391002C34A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2E74399B1A17A391002C34A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2E74399E1A17A391002C34A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E7439A01A17A391002C34A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E7439A31A17A391002C34A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2E7439A91A17A391002C34A2 /* mobilehealthidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobilehealthidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7439AE1A17A391002C34A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7439AF1A17A391002C34A2 /* mobilehealthidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobilehealthidTests.m; sourceTree = "<group>"; };
+		2E7439BB1A17D6A2002C34A2 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilehealthid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.release.xcconfig"; sourceTree = "<group>"; };
+		FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				2E7439921A17A391002C34A2 /* mobilehealthid */,
 				2E7439AC1A17A391002C34A2 /* mobilehealthidTests */,
 				2E7439911A17A391002C34A2 /* Products */,
+				458E1FDF0BC1A38A88506103 /* Pods */,
+				CFFB1D3304A67516AFDCDE91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +90,9 @@
 			children = (
 				2E7439971A17A391002C34A2 /* AppDelegate.h */,
 				2E7439981A17A391002C34A2 /* AppDelegate.m */,
-				2E74399A1A17A391002C34A2 /* ViewController.h */,
-				2E74399B1A17A391002C34A2 /* ViewController.m */,
-				2E74399D1A17A391002C34A2 /* Main.storyboard */,
 				2E7439A01A17A391002C34A2 /* Images.xcassets */,
 				2E7439A21A17A391002C34A2 /* LaunchScreen.xib */,
+				2E7439B91A17D62B002C34A2 /* Modules */,
 				2E7439931A17A391002C34A2 /* Supporting Files */,
 			);
 			path = mobilehealthid;
@@ -119,6 +124,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2E7439B91A17D62B002C34A2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2E7439BA1A17D641002C34A2 /* ID Scan */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		2E7439BA1A17D641002C34A2 /* ID Scan */ = {
+			isa = PBXGroup;
+			children = (
+				2E7439BB1A17D6A2002C34A2 /* ScanViewController.h */,
+				2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */,
+				2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */,
+			);
+			name = "ID Scan";
+			sourceTree = "<group>";
+		};
+		458E1FDF0BC1A38A88506103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */,
+				9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFFB1D3304A67516AFDCDE91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7439B31A17A391002C34A2 /* Build configuration list for PBXNativeTarget "mobilehealthid" */;
 			buildPhases = (
+				E1346962D45C2996D9360270 /* Check Pods Manifest.lock */,
 				2E74398C1A17A391002C34A2 /* Sources */,
 				2E74398D1A17A391002C34A2 /* Frameworks */,
 				2E74398E1A17A391002C34A2 /* Resources */,
+				EEA65844CC90623B7EE1DBCF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E74399F1A17A391002C34A2 /* Main.storyboard in Resources */,
+				2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */,
 				2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */,
 				2E7439A11A17A391002C34A2 /* Images.xcassets in Resources */,
 			);
@@ -214,13 +256,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E1346962D45C2996D9360270 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA65844CC90623B7EE1DBCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E74398C1A17A391002C34A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E74399C1A17A391002C34A2 /* ViewController.m in Sources */,
 				2E7439991A17A391002C34A2 /* AppDelegate.m in Sources */,
+				2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */,
 				2E7439961A17A391002C34A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +319,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E74399D1A17A391002C34A2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E74399E1A17A391002C34A2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2E7439A21A17A391002C34A2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +408,7 @@
 		};
 		2E7439B41A17A391002C34A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mobilehealthid/Info.plist;
@@ -351,6 +419,7 @@
 		};
 		2E7439B51A17A391002C34A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mobilehealthid/Info.plist;
@@ -412,6 +481,7 @@
 				2E7439B51A17A391002C34A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E7439B61A17A391002C34A2 /* Build configuration list for PBXNativeTarget "mobilehealthidTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +490,7 @@
 				2E7439B81A17A391002C34A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

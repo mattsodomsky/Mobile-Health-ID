@@ -1,0 +1,1 @@
+../../../../PPpdf417/pdf417.embeddedframework/pdf417.framework/Versions/A/Headers/PPScanningViewController.h
