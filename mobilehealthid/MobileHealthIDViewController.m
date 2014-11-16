@@ -7,9 +7,14 @@
 //
 
 #import "MobileHealthIDViewController.h"
+#import "Patient.h"
+#import "EmergencyContact.h"
+#import "Condition.h"
+#import "Allergy.h"
 
 @interface MobileHealthIDViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *allergy;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @end
 
 @implementation MobileHealthIDViewController
@@ -26,7 +31,29 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    
     [self.navigationController setNavigationBarHidden:NO];
+    
+    self.firstName.text = self.patient.firstName;
+    self.lastName.text = self.patient.lastName;
+    self.birthDate.text = self.patient.birthDate;
+    self.age.text = self.patient.age;
+    self.bloodType.text = self.patient.bloodType;
+    
+    self.medicalCondition.text = ((Condition *) [self.patient.medicalConditions objectAtIndex:0]).name;
+    
+    self.implant.text = ((Condition *) [self.patient.implants objectAtIndex:0]).name;
+    
+    self.allergy.text = ((Allergy *) [self.patient.generalAllergies objectAtIndex:0]).allergyName;
+    
+//    self.contactName.text = ((EmergencyContact *)[self.patient.emergencyContacts objectAtIndex:0]).contactName;
+    
+    CGRect contentRect = CGRectZero;
+    for (UIView *view in self.scrollView.subviews) {
+        contentRect = CGRectUnion(contentRect, view.frame);
+    }
+    self.scrollView.contentSize = CGSizeMake(375, 700);
+    
 
 }
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class Patient;
+
 @interface MobileHealthIDViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *firstName;
 @property (weak, nonatomic) IBOutlet UILabel *lastName;
@@ -17,5 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *medicalCondition;
 @property (weak, nonatomic) IBOutlet UILabel *implant;
 @property (weak, nonatomic) IBOutlet UILabel *contactName;
+
+@property (strong) Patient *patient;
 
 @end

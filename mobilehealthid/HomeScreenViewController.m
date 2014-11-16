@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 @property MobileHealthIDViewController *idVC;
-@property Patient *patient;
+@property (strong) Patient *patient;
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)signoutButtonPressed:(id)sender;
@@ -84,8 +84,7 @@
     NSInteger startIndex = startRange.location + 3;
     
     NSRange idCodeRange = NSMakeRange(startIndex, 15);
-    
-    
+
     PFQuery *query = [PFQuery queryWithClassName:@"Patient"];
     [query whereKey:@"ExternalIDValue" equalTo:[codeString substringWithRange:idCodeRange]];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
@@ -99,7 +98,23 @@
                 self.patient.lastName = object[@"Name_Last"];
                 
                 self.patient.sex = object[@"Sex"];
-                self.patient.birthDate = object[@"DateOfBirth"];
+                NSString *birthDate = object[@"DateOfBirth"];
+                NSRange range = NSMakeRange(0, 10);
+                self.patient.birthDate = [birthDate substringWithRange:range];
+                
+                NSDateFormatter *df = [[NSDateFormatter alloc] init];
+                [df setDateFormat:@"yyyy-MM-dd"];
+                NSDate *birthday = [df dateFromString: birthDate];
+                NSDate* now = [NSDate date];
+                NSDateComponents* ageComponents = [[NSCalendar currentCalendar]
+                                                   components:NSCalendarUnitYear
+                                                   fromDate:birthday
+                                                   toDate:now
+                                                   options:0];
+                NSInteger age = [ageComponents year];
+                
+                self.patient.age   = @(age).stringValue;
+                                
                 self.patient.idNumber = object[@"ExternalIDValue"];
                 
                 self.patient.bloodType = object[@"BloodType"];
@@ -164,24 +179,26 @@
                     
                 }
                 
+                if (!self.idVC) {
+                    self.idVC = [[MobileHealthIDViewController alloc] initWithNibName:@"MobileHealthIDViewController" bundle:nil];
+                }
+                
+                self.idVC.patient = self.patient;
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self dismissViewControllerAnimated:true completion:nil];
+                });
+                
+                if(![self.navigationController.topViewController isKindOfClass:[self.idVC class]]) {
+                    [self.navigationController pushViewController:self.idVC animated:YES];
+                }
+                
             }
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
-    
-    if (!self.idVC) {
-        self.idVC = [[MobileHealthIDViewController alloc] initWithNibName:@"MobileHealthIDViewController" bundle:nil];
-    }
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self dismissViewControllerAnimated:true completion:nil];
-        });
-    
-        if(![self.navigationController.topViewController isKindOfClass:[self.idVC class]]) {
-            [self.navigationController pushViewController:self.idVC animated:YES];
-        }
-    
     
     
 }

@@ -10,5 +10,18 @@
 
 @implementation Patient
 
+-(id)init {
+    
+    self = [super init];
+    
+    self.emergencyContacts = [[NSMutableArray alloc] init];
+    self.generalAllergies = [[NSMutableArray alloc] init];
+    self.implants = [[NSMutableArray alloc] init];
+    self.medicalConditions = [[NSMutableArray alloc] init];
+    self.medicalAllergies = [[NSMutableArray alloc] init];
+    self.doctors = [[NSMutableArray alloc] init];
+   
+    return self;
+}
 
 @end
