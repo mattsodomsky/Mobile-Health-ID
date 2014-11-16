@@ -11,6 +11,10 @@
 #import <Parse/Parse.h>
 #import "MobileHealthIDViewController.h"
 #import "Patient.h"
+#import "Allergy.h"
+#import "Doctor.h"
+#import "EmergencyContact.h"
+#import "Condition.h"
 
 @interface HomeScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
@@ -69,6 +73,10 @@
 -(void)decodeCardAndPresentResults:(AVMetadataMachineReadableCodeObject *)cardInfo {
     
     NSLog(@"HERE");
+    
+    if(!self.patient) {
+        self.patient = [[Patient alloc]init];
+    }
 
     NSString *codeString = cardInfo.stringValue;
     
@@ -86,15 +94,17 @@
             // Do something with the found objects
             for (PFObject *object in objects) {
                 
-                NSLog(@"%@", object[@"Name_First"]);
-                NSLog(@"%@", object[@"Name_Middle"]);
-                NSLog(@"%@", object[@"Name_Last"]);
-                NSLog(@"%@", object[@"Sex"]);
-                NSLog(@"%@", object[@"DateOfBirth"]);
+                self.patient.firstName = object[@"Name_First"];
+                self.patient.middleName = object[@"Name_Middle"];
+                self.patient.lastName = object[@"Name_Last"];
                 
-                NSLog(@"%@", object[@"ExternalIDValue"]);
-                NSLog(@"%@", object[@"BloodType"]);
+                self.patient.sex = object[@"Sex"];
+                self.patient.birthDate = object[@"DateOfBirth"];
+                self.patient.idNumber = object[@"ExternalIDValue"];
                 
+                self.patient.bloodType = object[@"BloodType"];
+                
+
                 for (PFObject *generalAllergy in object[@"GeneralAllergies"]) {
                     NSLog(@"%@", generalAllergy[@"Description"]);
                     NSLog(@"%@", generalAllergy[@"Severity"]);

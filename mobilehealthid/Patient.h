@@ -15,6 +15,7 @@
 @property NSString *lastName;
 @property NSString *sex;
 @property NSString *bloodType;
+@property NSString *idNumber;
 
 @property NSString *birthDate;
 @property NSString *age;
