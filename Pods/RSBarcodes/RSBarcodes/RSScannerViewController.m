@@ -454,7 +454,7 @@ didOutputMetadataObjects:(NSArray *)metadataObjects
     
     if (!self.torchButton && [self.device hasTorch]) {
         self.torchButton = [[UIButton alloc] init];
-        [self.torchButton setTitle:@" torch " forState:UIControlStateNormal];
+        [self.torchButton setTitle:@"Flashlight" forState:UIControlStateNormal];
         [self.torchButton setContentHorizontalAlignment:
          UIControlContentHorizontalAlignmentCenter];
         

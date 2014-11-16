@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background667.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tyv-jy-SeM">
-                    <rect key="frame" x="-19" y="0.0" width="394" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-t6-raw">
                     <rect key="frame" x="85" y="229" width="186" height="186"/>
@@ -30,6 +30,9 @@
                         <action selector="scanButtonPressed:" destination="-1" eventType="touchUpInside" id="Rgw-sw-TIu"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winnipeg-fp-logo-full.png" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-kv-4ZM">
+                    <rect key="frame" x="36" y="471" width="302" height="97"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izN-fc-gXZ">
                     <rect key="frame" x="32" y="590" width="311" height="54"/>
                     <state key="normal" title="Button" image="button-signout.png">
@@ -39,9 +42,6 @@
                         <action selector="signoutButtonPressed:" destination="-1" eventType="touchUpInside" id="UfT-Jb-WJl"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winnipeg-fp-logo-full.png" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-kv-4ZM">
-                    <rect key="frame" x="36" y="471" width="302" height="97"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

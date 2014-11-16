@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ScanViewController.h"
 #import <Parse/Parse.h>
 #import "LoginScreenViewController.h"
 

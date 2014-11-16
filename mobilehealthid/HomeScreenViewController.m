@@ -7,11 +7,11 @@
 //
 
 #import "HomeScreenViewController.h"
-#import "ScanViewController.h"
+#import "RSScannerViewController.h"
+#import <Parse/Parse.h>
 
 @interface HomeScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
-@property ScanViewController *scanVC;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
 - (IBAction)scanButtonPressed:(id)sender;
@@ -32,21 +32,46 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES];
     self.backgroundView.image = [UIImage imageNamed:@"background667.png"];
+    [self.navigationController setNavigationBarHidden:YES];
+
 }
 
 
 - (IBAction)scanButtonPressed:(id)sender {
-    if (!self.scanVC) {
-        self.scanVC = [[ScanViewController alloc]initWithNibName:@"ScanViewController" bundle:nil];
-    }
+    RSScannerViewController *scanner = [[RSScannerViewController alloc] initWithCornerView:YES
+                                                                               controlView:NO
+                                                                           barcodesHandler:^(NSArray *barcodeObjects) {
+                                                                               if (barcodeObjects.count > 0) {
+                                                                                   [barcodeObjects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                                                                                       dispatch_async(dispatch_get_main_queue(), ^{
+                                                                                           AVMetadataMachineReadableCodeObject *code = obj;
+//                                                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Barcode found"
+//                                                                                                                                           message:code.stringValue
+//                                                                                                                                          delegate:self
+//                                                                                                                                 cancelButtonTitle:@"OK"
+//                                                                                                                                 otherButtonTitles:nil];
+                                                                                           //[scanner.navigationController popViewControllerAnimated:YES];
+//                                                                                           dispatch_async(dispatch_get_main_queue(), ^{
+//                                                                                               [scanner dismissViewControllerAnimated:true completion:nil];
+//                                                                                               [alert show];
+//                                                                                           });
+                                                                                       });
+                                                                                       [scanner dismissViewControllerAnimated:true completion:nil];
+
+                                                                                   }];
+                                                                               }
+                                                                           }
+                                                                   preferredCameraPosition:AVCaptureDevicePositionBack];
+    [scanner setIsButtonBordersVisible:YES];
+    [scanner setStopOnFirst:YES];
     
-    [self.navigationController pushViewController:self.scanVC animated:true];
+    
+    [self presentViewController:scanner animated:true completion:nil];
 }
 
 - (IBAction)signoutButtonPressed:(id)sender {
     
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:false];
 }
 @end

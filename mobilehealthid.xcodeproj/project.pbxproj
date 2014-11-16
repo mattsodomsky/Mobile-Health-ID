@@ -12,8 +12,6 @@
 		2E7439A11A17A391002C34A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439A01A17A391002C34A2 /* Images.xcassets */; };
 		2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439A21A17A391002C34A2 /* LaunchScreen.xib */; };
 		2E7439B01A17A391002C34A2 /* mobilehealthidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439AF1A17A391002C34A2 /* mobilehealthidTests.m */; };
-		2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */; };
-		2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */; };
 		2E7439C51A17F95F002C34A2 /* MobileHealthIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439C31A17F95F002C34A2 /* MobileHealthIDViewController.m */; };
 		2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439C41A17F95F002C34A2 /* MobileHealthIDViewController.xib */; };
 		2E7439C81A17FA89002C34A2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7439C71A17FA89002C34A2 /* Parse.framework */; };
@@ -65,9 +63,6 @@
 		2E7439A91A17A391002C34A2 /* mobilehealthidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobilehealthidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7439AE1A17A391002C34A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7439AF1A17A391002C34A2 /* mobilehealthidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mobilehealthidTests.m; sourceTree = "<group>"; };
-		2E7439BB1A17D6A2002C34A2 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
-		2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
-		2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		2E7439C21A17F95F002C34A2 /* MobileHealthIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileHealthIDViewController.h; sourceTree = "<group>"; };
 		2E7439C31A17F95F002C34A2 /* MobileHealthIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileHealthIDViewController.m; sourceTree = "<group>"; };
 		2E7439C41A17F95F002C34A2 /* MobileHealthIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileHealthIDViewController.xib; sourceTree = "<group>"; };
@@ -203,19 +198,8 @@
 				2E7439E91A182444002C34A2 /* Home Screen */,
 				2E7439E31A181C28002C34A2 /* Login Screen */,
 				2E7439C11A17F93C002C34A2 /* Scan Results */,
-				2E7439BA1A17D641002C34A2 /* ID Scan */,
 			);
 			name = Modules;
-			sourceTree = "<group>";
-		};
-		2E7439BA1A17D641002C34A2 /* ID Scan */ = {
-			isa = PBXGroup;
-			children = (
-				2E7439BB1A17D6A2002C34A2 /* ScanViewController.h */,
-				2E7439BC1A17D6A2002C34A2 /* ScanViewController.m */,
-				2E7439BD1A17D6A2002C34A2 /* ScanViewController.xib */,
-			);
-			name = "ID Scan";
 			sourceTree = "<group>";
 		};
 		2E7439C11A17F93C002C34A2 /* Scan Results */ = {
@@ -390,7 +374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */,
 				2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */,
 				2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */,
 				2E7439F91A182AA9002C34A2 /* scan-button-pressed.png in Resources */,
@@ -456,7 +439,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7439991A17A391002C34A2 /* AppDelegate.m in Sources */,
-				2E7439BE1A17D6A2002C34A2 /* ScanViewController.m in Sources */,
 				2E7439961A17A391002C34A2 /* main.m in Sources */,
 				2E7439ED1A18245C002C34A2 /* HomeScreenViewController.m in Sources */,
 				2E7439C51A17F95F002C34A2 /* MobileHealthIDViewController.m in Sources */,

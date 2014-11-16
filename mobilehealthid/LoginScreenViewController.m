@@ -23,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +39,21 @@
         self.homeVc = [[HomeScreenViewController alloc] initWithNibName:@"HomeScreenViewController" bundle:nil];
     }
     
-    [self.navigationController pushViewController:self.homeVc animated:true];
+    [self.navigationController pushViewController:self.homeVc animated:false];
+}
+
+-(void)viewWillAppear:(BOOL)animated  {
+    [self.navigationController setNavigationBarHidden:YES];
+
+}
+
+
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 @end
