@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ScanViewController.h"
 #import <Parse/Parse.h>
+#import "LoginScreenViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -24,9 +25,9 @@
                   clientKey:@"L0dpSHiYQbI3fHRYoWncGIw2V9HsGKmkOTIxr3IE"];
     
     
-    UIViewController *vc = [[ScanViewController alloc] initWithNibName:@"ScanViewController" bundle:nil];
+    UIViewController *loginVc = [[LoginScreenViewController alloc] initWithNibName:@"LoginScreenViewController" bundle:nil];
 
-    UINavigationController *navControllerVc = [[UINavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *navControllerVc = [[UINavigationController alloc] initWithRootViewController:loginVc];
 
     self.window.rootViewController = navControllerVc;
     
