@@ -106,40 +106,62 @@
                 
 
                 for (PFObject *generalAllergy in object[@"GeneralAllergies"]) {
-                    NSLog(@"%@", generalAllergy[@"Description"]);
-                    NSLog(@"%@", generalAllergy[@"Severity"]);
-                    NSLog(@"%@", generalAllergy[@"UserSeverity"]);
-                }
-                
-                for (PFObject *implant in object[@"Implants"]) {
-                    NSLog(@"%@", implant[@"Description"]);
-                    NSLog(@"%@", implant[@"Severity"]);
+                    
+                    Allergy *allergy = [[Allergy alloc] init];
+                    allergy.allergyName = generalAllergy[@"Description"];
+                    allergy.severity = generalAllergy[@"Severity"];
+                    allergy.userSeverity = generalAllergy[@"UserSeverity"];
+                    [self.patient.generalAllergies addObject:allergy];
                     
                 }
                 
-                for (PFObject *allergy in object[@"MedicalAllergies"]) {
-                    NSLog(@"%@", allergy[@"Description"]);
-                    NSLog(@"%@", allergy[@"Severity"]);
-                    NSLog(@"%@", allergy[@"UserSeverity"]);
+                for (PFObject *implant in object[@"Implants"]) {
+                    
+                    Condition *currentImplant = [[Condition alloc]init];
+                    currentImplant.name = implant[@"Description"];
+                    currentImplant.severity = implant[@"Severity"];
+                    [self.patient.implants addObject:currentImplant];
+                    
+                }
+                
+                for (PFObject *medicalAllergy in object[@"MedicalAllergies"]) {
+                    
+                    Allergy *allergy = [[Allergy alloc] init];
+                    allergy.allergyName = medicalAllergy[@"Description"];
+                    allergy.severity = medicalAllergy[@"Severity"];
+                    allergy.userSeverity = medicalAllergy[@"UserSeverity"];
+                    [self.patient.medicalAllergies addObject:allergy];
+                    
                 }
                 
                 
                 for (PFObject *condition in object[@"MedicalConditions"]) {
-                    NSLog(@"%@", condition[@"Description"]);
-                    NSLog(@"%@", condition[@"Severity"]);
+                    
+                    Condition *currentCondition = [[Condition alloc]init];
+                    currentCondition.name = condition[@"Description"];
+                    currentCondition.severity = condition[@"Severity"];
+                    [self.patient.medicalConditions addObject:currentCondition];
                     
                 }
                 
                 for (PFObject *contact in object[@"MyContacts"]) {
-                    NSLog(@"%@", contact[@"contactName"]);
-                    NSLog(@"%@", contact[@"contactNumber"]);
-                    NSLog(@"%@", contact[@"contactRelation"]);
+                    
+                    EmergencyContact *currentContact = [[EmergencyContact alloc] init];
+                    currentContact.contactName = contact[@"contactName"];
+                    currentContact.contactNumber = contact[@"contactNumber"];
+                    currentContact.contactRelation = contact[@"contactRelation"];
+                    [self.patient.emergencyContacts addObject:currentContact];
+                    
                 }
                 
                 for (PFObject *doctor in object[@"Physician"]) {
-                    NSLog(@"%@", doctor[@"Institution"]);
-                    NSLog(@"%@", doctor[@"PhysicianName"]);
-                    NSLog(@"%@", doctor[@"PhysicianNumber"]);
+                    
+                    Doctor *currentDoctor = [[Doctor alloc]init];
+                    currentDoctor.institution = doctor[@"Institution"];
+                    currentDoctor.name = doctor[@"PhysicianName"];
+                    currentDoctor.phoneNumber = doctor[@"PhysicianNumber"];
+                    [self.patient.doctors addObject:currentDoctor];
+                    
                 }
                 
             }

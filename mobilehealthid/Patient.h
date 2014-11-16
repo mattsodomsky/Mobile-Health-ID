@@ -22,6 +22,7 @@
 
 @property NSMutableArray *generalAllergies;
 @property NSMutableArray *implants;
+@property NSMutableArray *medicalConditions;
 @property NSMutableArray *medicalAllergies;
 @property NSMutableArray *emergencyContacts;
 @property NSMutableArray *doctors;
