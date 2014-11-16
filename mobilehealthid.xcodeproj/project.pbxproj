@@ -60,6 +60,11 @@
 		2E743A2E1A18ED66002C34A2 /* button-signout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A2C1A18ED66002C34A2 /* button-signout@2x.png */; };
 		2E743A311A18EE1D002C34A2 /* scan-button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A2F1A18EE1D002C34A2 /* scan-button-pressed@2x.png */; };
 		2E743A321A18EE1D002C34A2 /* scan-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A301A18EE1D002C34A2 /* scan-button@2x.png */; };
+		2E743A361A18F9B0002C34A2 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E743A351A18F9B0002C34A2 /* Patient.m */; };
+		2E743A391A18FB79002C34A2 /* EmergencyContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E743A381A18FB79002C34A2 /* EmergencyContact.m */; };
+		2E743A3C1A18FBB7002C34A2 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E743A3B1A18FBB7002C34A2 /* Doctor.m */; };
+		2E743A3F1A18FC53002C34A2 /* Allergy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E743A3E1A18FC53002C34A2 /* Allergy.m */; };
+		2E743A421A18FCEC002C34A2 /* Condition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E743A411A18FCEC002C34A2 /* Condition.m */; };
 		F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +141,16 @@
 		2E743A2C1A18ED66002C34A2 /* button-signout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-signout@2x.png"; sourceTree = "<group>"; };
 		2E743A2F1A18EE1D002C34A2 /* scan-button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button-pressed@2x.png"; sourceTree = "<group>"; };
 		2E743A301A18EE1D002C34A2 /* scan-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button@2x.png"; sourceTree = "<group>"; };
+		2E743A341A18F9B0002C34A2 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		2E743A351A18F9B0002C34A2 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		2E743A371A18FB79002C34A2 /* EmergencyContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyContact.h; sourceTree = "<group>"; };
+		2E743A381A18FB79002C34A2 /* EmergencyContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyContact.m; sourceTree = "<group>"; };
+		2E743A3A1A18FBB7002C34A2 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		2E743A3B1A18FBB7002C34A2 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		2E743A3D1A18FC53002C34A2 /* Allergy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Allergy.h; sourceTree = "<group>"; };
+		2E743A3E1A18FC53002C34A2 /* Allergy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Allergy.m; sourceTree = "<group>"; };
+		2E743A401A18FCEC002C34A2 /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Condition.h; sourceTree = "<group>"; };
+		2E743A411A18FCEC002C34A2 /* Condition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Condition.m; sourceTree = "<group>"; };
 		7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilehealthid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.release.xcconfig"; sourceTree = "<group>"; };
 		FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +212,7 @@
 		2E7439921A17A391002C34A2 /* mobilehealthid */ = {
 			isa = PBXGroup;
 			children = (
+				2E743A331A18F93B002C34A2 /* Model */,
 				2E7439EF1A182962002C34A2 /* Assets */,
 				2E7439971A17A391002C34A2 /* AppDelegate.h */,
 				2E7439981A17A391002C34A2 /* AppDelegate.m */,
@@ -326,6 +342,23 @@
 				2E7439FE1A182C20002C34A2 /* UbuntuCondensed-Regular.ttf */,
 			);
 			name = fonts;
+			sourceTree = "<group>";
+		};
+		2E743A331A18F93B002C34A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E743A341A18F9B0002C34A2 /* Patient.h */,
+				2E743A351A18F9B0002C34A2 /* Patient.m */,
+				2E743A371A18FB79002C34A2 /* EmergencyContact.h */,
+				2E743A381A18FB79002C34A2 /* EmergencyContact.m */,
+				2E743A3A1A18FBB7002C34A2 /* Doctor.h */,
+				2E743A3B1A18FBB7002C34A2 /* Doctor.m */,
+				2E743A3D1A18FC53002C34A2 /* Allergy.h */,
+				2E743A3E1A18FC53002C34A2 /* Allergy.m */,
+				2E743A401A18FCEC002C34A2 /* Condition.h */,
+				2E743A411A18FCEC002C34A2 /* Condition.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		458E1FDF0BC1A38A88506103 /* Pods */ = {
@@ -522,11 +555,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E743A3F1A18FC53002C34A2 /* Allergy.m in Sources */,
 				2E7439991A17A391002C34A2 /* AppDelegate.m in Sources */,
 				2E7439961A17A391002C34A2 /* main.m in Sources */,
 				2E7439ED1A18245C002C34A2 /* HomeScreenViewController.m in Sources */,
+				2E743A361A18F9B0002C34A2 /* Patient.m in Sources */,
+				2E743A391A18FB79002C34A2 /* EmergencyContact.m in Sources */,
 				2E7439C51A17F95F002C34A2 /* MobileHealthIDViewController.m in Sources */,
+				2E743A3C1A18FBB7002C34A2 /* Doctor.m in Sources */,
 				2E7439E71A181C79002C34A2 /* LoginScreenViewController.m in Sources */,
+				2E743A421A18FCEC002C34A2 /* Condition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
