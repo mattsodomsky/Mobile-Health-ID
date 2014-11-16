@@ -9,10 +9,12 @@
 #import "HomeScreenViewController.h"
 #import "RSScannerViewController.h"
 #import <Parse/Parse.h>
+#import "MobileHealthIDViewController.h"
 
 @interface HomeScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
+@property MobileHealthIDViewController *idVC;
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)signoutButtonPressed:(id)sender;
@@ -63,9 +65,9 @@
 }
 
 -(void)decodeCardAndPresentResults:(AVMetadataMachineReadableCodeObject *)cardInfo {
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        [self dismissViewControllerAnimated:true completion:nil];
-//    });
+    
+    NSLog(@"HERE");
+
     NSString *codeString = cardInfo.stringValue;
     
     NSRange startRange = [codeString rangeOfString:@"DAQ"];
@@ -127,15 +129,23 @@
                     NSLog(@"%@", doctor[@"PhysicianNumber"]);
                 }
                 
-                
-                
-                
             }
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+    
+    if (!self.idVC) {
+        self.idVC = [[MobileHealthIDViewController alloc] initWithNibName:@"MobileHealthIDViewController" bundle:nil];
+    }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:true completion:nil];
+        });
+    
+    [self.navigationController pushViewController:self.idVC animated:YES];
+    
+    
     
 }
 
