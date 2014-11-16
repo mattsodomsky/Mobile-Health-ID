@@ -10,11 +10,13 @@
 #import "RSScannerViewController.h"
 #import <Parse/Parse.h>
 #import "MobileHealthIDViewController.h"
+#import "Patient.h"
 
 @interface HomeScreenViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *scanButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 @property MobileHealthIDViewController *idVC;
+@property Patient *patient;
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)signoutButtonPressed:(id)sender;
@@ -80,6 +82,7 @@
     [query whereKey:@"ExternalIDValue" equalTo:[codeString substringWithRange:idCodeRange]];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
+            NSLog(@"%lu", (unsigned long)[objects count]);
             // Do something with the found objects
             for (PFObject *object in objects) {
                 
@@ -143,7 +146,9 @@
             [self dismissViewControllerAnimated:true completion:nil];
         });
     
-    [self.navigationController pushViewController:self.idVC animated:YES];
+        if(![self.navigationController.topViewController isKindOfClass:[self.idVC class]]) {
+            [self.navigationController pushViewController:self.idVC animated:YES];
+        }
     
     
     

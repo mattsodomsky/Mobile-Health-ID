@@ -253,7 +253,7 @@
 		2E7439B91A17D62B002C34A2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2E7439E91A182444002C34A2 /* Home Screen */,
+				2E7439E91A182444002C34A2 /* Scan Screen */,
 				2E7439E31A181C28002C34A2 /* Login Screen */,
 				2E7439C11A17F93C002C34A2 /* Scan Results */,
 			);
@@ -280,14 +280,14 @@
 			name = "Login Screen";
 			sourceTree = "<group>";
 		};
-		2E7439E91A182444002C34A2 /* Home Screen */ = {
+		2E7439E91A182444002C34A2 /* Scan Screen */ = {
 			isa = PBXGroup;
 			children = (
 				2E7439EA1A18245C002C34A2 /* HomeScreenViewController.h */,
 				2E7439EB1A18245C002C34A2 /* HomeScreenViewController.m */,
 				2E7439EC1A18245C002C34A2 /* HomeScreenViewController.xib */,
 			);
-			name = "Home Screen";
+			name = "Scan Screen";
 			sourceTree = "<group>";
 		};
 		2E7439EF1A182962002C34A2 /* Assets */ = {
