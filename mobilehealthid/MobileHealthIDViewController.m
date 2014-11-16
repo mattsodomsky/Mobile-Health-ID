@@ -52,7 +52,7 @@
     for (UIView *view in self.scrollView.subviews) {
         contentRect = CGRectUnion(contentRect, view.frame);
     }
-    self.scrollView.contentSize = CGSizeMake(375, 700);
+    self.scrollView.contentSize = CGSizeMake(375, 720);
     
 
 }

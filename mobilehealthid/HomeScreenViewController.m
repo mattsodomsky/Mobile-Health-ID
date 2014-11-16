@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 @property MobileHealthIDViewController *idVC;
 @property (strong) Patient *patient;
+@property UIAlertView *alert;
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)signoutButtonPressed:(id)sender;
@@ -89,7 +90,19 @@
     [query whereKey:@"ExternalIDValue" equalTo:[codeString substringWithRange:idCodeRange]];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            NSLog(@"%lu", (unsigned long)[objects count]);
+            if ([objects count] < 1) {
+                
+                if (!self.alert) {
+                    self.alert = [[UIAlertView alloc] initWithTitle:@"No Mobile Health Record" message:@"" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                }
+                
+                if (!self.alert.visible) {
+                    [self.alert show];
+
+                }
+                
+            } else {
+                
             // Do something with the found objects
             for (PFObject *object in objects) {
                 
@@ -194,6 +207,7 @@
                 }
                 
             }
+        }
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -201,6 +215,11 @@
     }];
     
     
+}
+
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 - (IBAction)signoutButtonPressed:(id)sender {

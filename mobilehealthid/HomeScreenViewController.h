@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeScreenViewController : UIViewController
-
+@interface HomeScreenViewController : UIViewController <UIAlertViewDelegate>
 @end
