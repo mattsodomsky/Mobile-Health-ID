@@ -26,6 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
 -(void)viewDidAppear:(BOOL)animated {
     
     PFQuery *query = [PFQuery queryWithClassName:@"Patient"];

@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController">
             <connections>
+                <outlet property="backgroundView" destination="Tyv-jy-SeM" id="30s-Jz-fHq"/>
+                <outlet property="scanButton" destination="dsQ-t6-raw" id="PpR-Wq-3sw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,18 +16,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-t6-raw">
-                    <rect key="frame" x="164" y="265" width="35" height="30"/>
-                    <state key="normal" title="Scan">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background667.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tyv-jy-SeM">
+                    <rect key="frame" x="-19" y="0.0" width="394" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-t6-raw">
+                    <rect key="frame" x="85" y="229" width="186" height="186"/>
+                    <state key="normal" title="Scan" image="scan-button.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="scan-button-pressed.png"/>
+                    <state key="highlighted" image="scan-button-pressed.png"/>
                     <connections>
                         <action selector="scanButtonPressed:" destination="-1" eventType="touchUpInside" id="Rgw-sw-TIu"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izN-fc-gXZ">
+                    <rect key="frame" x="32" y="590" width="311" height="54"/>
+                    <state key="normal" title="Button" image="button-signout.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signoutButtonPressed:" destination="-1" eventType="touchUpInside" id="UfT-Jb-WJl"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winnipeg-fp-logo-full.png" translatesAutoresizingMaskIntoConstraints="NO" id="z3z-kv-4ZM">
+                    <rect key="frame" x="36" y="471" width="302" height="97"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="background667.png" width="750" height="1334"/>
+        <image name="button-signout.png" width="311" height="54"/>
+        <image name="scan-button-pressed.png" width="186" height="186"/>
+        <image name="scan-button.png" width="186" height="186"/>
+        <image name="winnipeg-fp-logo-full.png" width="605" height="195"/>
+    </resources>
 </document>

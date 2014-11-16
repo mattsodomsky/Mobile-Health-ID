@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginScreenViewController : UIViewController
+@interface LoginScreenViewController : UIViewController <UITextInputDelegate>
 
 @end

@@ -12,6 +12,8 @@
 @interface LoginScreenViewController ()
 
 @property HomeScreenViewController *homeVc;
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 - (IBAction)loginButtonClicked:(id)sender;
 @end

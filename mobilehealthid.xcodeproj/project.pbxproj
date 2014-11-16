@@ -32,6 +32,15 @@
 		2E7439E81A181C79002C34A2 /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439E61A181C79002C34A2 /* LoginScreenViewController.xib */; };
 		2E7439ED1A18245C002C34A2 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7439EB1A18245C002C34A2 /* HomeScreenViewController.m */; };
 		2E7439EE1A18245C002C34A2 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439EC1A18245C002C34A2 /* HomeScreenViewController.xib */; };
+		2E7439F21A182975002C34A2 /* background667.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439F11A182975002C34A2 /* background667.png */; };
+		2E7439F91A182AA9002C34A2 /* scan-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439F71A182AA9002C34A2 /* scan-button-pressed.png */; };
+		2E7439FA1A182AA9002C34A2 /* scan-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439F81A182AA9002C34A2 /* scan-button.png */; };
+		2E7439FC1A182AF6002C34A2 /* winnipeg-fp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439FB1A182AF6002C34A2 /* winnipeg-fp-logo.png */; };
+		2E743A001A18327A002C34A2 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7439FF1A18327A002C34A2 /* launch.png */; };
+		2E743A021A1833E0002C34A2 /* winnipeg-fp-logo-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A011A1833E0002C34A2 /* winnipeg-fp-logo-full.png */; };
+		2E743A041A1834AE002C34A2 /* button-signout.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A031A1834AE002C34A2 /* button-signout.png */; };
+		2E743A061A1835FD002C34A2 /* button-signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A051A1835FD002C34A2 /* button-signin.png */; };
+		2E743A081A183AD8002C34A2 /* signin-help.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A071A183AD8002C34A2 /* signin-help.png */; };
 		F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +89,16 @@
 		2E7439EA1A18245C002C34A2 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
 		2E7439EB1A18245C002C34A2 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
 		2E7439EC1A18245C002C34A2 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		2E7439F11A182975002C34A2 /* background667.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background667.png; sourceTree = "<group>"; };
+		2E7439F71A182AA9002C34A2 /* scan-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button-pressed.png"; sourceTree = "<group>"; };
+		2E7439F81A182AA9002C34A2 /* scan-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button.png"; sourceTree = "<group>"; };
+		2E7439FB1A182AF6002C34A2 /* winnipeg-fp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "winnipeg-fp-logo.png"; sourceTree = "<group>"; };
+		2E7439FE1A182C20002C34A2 /* UbuntuCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		2E7439FF1A18327A002C34A2 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		2E743A011A1833E0002C34A2 /* winnipeg-fp-logo-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "winnipeg-fp-logo-full.png"; sourceTree = "<group>"; };
+		2E743A031A1834AE002C34A2 /* button-signout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-signout.png"; sourceTree = "<group>"; };
+		2E743A051A1835FD002C34A2 /* button-signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-signin.png"; sourceTree = "<group>"; };
+		2E743A071A183AD8002C34A2 /* signin-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signin-help.png"; sourceTree = "<group>"; };
 		7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilehealthid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.release.xcconfig"; sourceTree = "<group>"; };
 		FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +160,7 @@
 		2E7439921A17A391002C34A2 /* mobilehealthid */ = {
 			isa = PBXGroup;
 			children = (
+				2E7439EF1A182962002C34A2 /* Assets */,
 				2E7439971A17A391002C34A2 /* AppDelegate.h */,
 				2E7439981A17A391002C34A2 /* AppDelegate.m */,
 				2E7439A01A17A391002C34A2 /* Images.xcassets */,
@@ -226,6 +246,39 @@
 				2E7439EC1A18245C002C34A2 /* HomeScreenViewController.xib */,
 			);
 			name = "Home Screen";
+			sourceTree = "<group>";
+		};
+		2E7439EF1A182962002C34A2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2E7439FD1A182BDB002C34A2 /* fonts */,
+				2E7439F01A18296C002C34A2 /* images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2E7439F01A18296C002C34A2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2E743A071A183AD8002C34A2 /* signin-help.png */,
+				2E743A051A1835FD002C34A2 /* button-signin.png */,
+				2E743A031A1834AE002C34A2 /* button-signout.png */,
+				2E743A011A1833E0002C34A2 /* winnipeg-fp-logo-full.png */,
+				2E7439FF1A18327A002C34A2 /* launch.png */,
+				2E7439FB1A182AF6002C34A2 /* winnipeg-fp-logo.png */,
+				2E7439F71A182AA9002C34A2 /* scan-button-pressed.png */,
+				2E7439F81A182AA9002C34A2 /* scan-button.png */,
+				2E7439F11A182975002C34A2 /* background667.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		2E7439FD1A182BDB002C34A2 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E7439FE1A182C20002C34A2 /* UbuntuCondensed-Regular.ttf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		458E1FDF0BC1A38A88506103 /* Pods */ = {
@@ -340,9 +393,18 @@
 				2E7439BF1A17D6A2002C34A2 /* ScanViewController.xib in Resources */,
 				2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */,
 				2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */,
+				2E7439F91A182AA9002C34A2 /* scan-button-pressed.png in Resources */,
+				2E7439F21A182975002C34A2 /* background667.png in Resources */,
+				2E7439FC1A182AF6002C34A2 /* winnipeg-fp-logo.png in Resources */,
+				2E743A021A1833E0002C34A2 /* winnipeg-fp-logo-full.png in Resources */,
 				2E7439EE1A18245C002C34A2 /* HomeScreenViewController.xib in Resources */,
 				2E7439A11A17A391002C34A2 /* Images.xcassets in Resources */,
+				2E743A041A1834AE002C34A2 /* button-signout.png in Resources */,
+				2E743A001A18327A002C34A2 /* launch.png in Resources */,
+				2E743A081A183AD8002C34A2 /* signin-help.png in Resources */,
+				2E743A061A1835FD002C34A2 /* button-signin.png in Resources */,
 				2E7439E81A181C79002C34A2 /* LoginScreenViewController.xib in Resources */,
+				2E7439FA1A182AA9002C34A2 /* scan-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
