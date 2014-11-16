@@ -16,6 +16,7 @@
 
 - (IBAction)scanButtonPressed:(id)sender;
 - (IBAction)signoutButtonPressed:(id)sender;
+- (void)decodeCardAndPresentResults:(AVMetadataMachineReadableCodeObject*)cardInfo;
 
 @end
 
@@ -46,18 +47,9 @@
                                                                                    [barcodeObjects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                                                                                        dispatch_async(dispatch_get_main_queue(), ^{
                                                                                            AVMetadataMachineReadableCodeObject *code = obj;
-//                                                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Barcode found"
-//                                                                                                                                           message:code.stringValue
-//                                                                                                                                          delegate:self
-//                                                                                                                                 cancelButtonTitle:@"OK"
-//                                                                                                                                 otherButtonTitles:nil];
-                                                                                           //[scanner.navigationController popViewControllerAnimated:YES];
-//                                                                                           dispatch_async(dispatch_get_main_queue(), ^{
-//                                                                                               [scanner dismissViewControllerAnimated:true completion:nil];
-//                                                                                               [alert show];
-//                                                                                           });
+                                                                                           [self decodeCardAndPresentResults:code];
                                                                                        });
-                                                                                       [scanner dismissViewControllerAnimated:true completion:nil];
+                                                                                       
 
                                                                                    }];
                                                                                }
@@ -68,6 +60,83 @@
     
     
     [self presentViewController:scanner animated:true completion:nil];
+}
+
+-(void)decodeCardAndPresentResults:(AVMetadataMachineReadableCodeObject *)cardInfo {
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self dismissViewControllerAnimated:true completion:nil];
+//    });
+    NSString *codeString = cardInfo.stringValue;
+    
+    NSRange startRange = [codeString rangeOfString:@"DAQ"];
+    NSInteger startIndex = startRange.location + 3;
+    
+    NSRange idCodeRange = NSMakeRange(startIndex, 15);
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Patient"];
+    [query whereKey:@"ExternalIDValue" equalTo:[codeString substringWithRange:idCodeRange]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                
+                NSLog(@"%@", object[@"Name_First"]);
+                NSLog(@"%@", object[@"Name_Middle"]);
+                NSLog(@"%@", object[@"Name_Last"]);
+                NSLog(@"%@", object[@"Sex"]);
+                NSLog(@"%@", object[@"DateOfBirth"]);
+                
+                NSLog(@"%@", object[@"ExternalIDValue"]);
+                NSLog(@"%@", object[@"BloodType"]);
+                
+                for (PFObject *generalAllergy in object[@"GeneralAllergies"]) {
+                    NSLog(@"%@", generalAllergy[@"Description"]);
+                    NSLog(@"%@", generalAllergy[@"Severity"]);
+                    NSLog(@"%@", generalAllergy[@"UserSeverity"]);
+                }
+                
+                for (PFObject *implant in object[@"Implants"]) {
+                    NSLog(@"%@", implant[@"Description"]);
+                    NSLog(@"%@", implant[@"Severity"]);
+                    
+                }
+                
+                for (PFObject *allergy in object[@"MedicalAllergies"]) {
+                    NSLog(@"%@", allergy[@"Description"]);
+                    NSLog(@"%@", allergy[@"Severity"]);
+                    NSLog(@"%@", allergy[@"UserSeverity"]);
+                }
+                
+                
+                for (PFObject *condition in object[@"MedicalConditions"]) {
+                    NSLog(@"%@", condition[@"Description"]);
+                    NSLog(@"%@", condition[@"Severity"]);
+                    
+                }
+                
+                for (PFObject *contact in object[@"MyContacts"]) {
+                    NSLog(@"%@", contact[@"contactName"]);
+                    NSLog(@"%@", contact[@"contactNumber"]);
+                    NSLog(@"%@", contact[@"contactRelation"]);
+                }
+                
+                for (PFObject *doctor in object[@"Physician"]) {
+                    NSLog(@"%@", doctor[@"Institution"]);
+                    NSLog(@"%@", doctor[@"PhysicianName"]);
+                    NSLog(@"%@", doctor[@"PhysicianNumber"]);
+                }
+                
+                
+                
+                
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 
 - (IBAction)signoutButtonPressed:(id)sender {
