@@ -20,6 +20,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.949f green:0.945f blue:0.914f alpha:1.00f];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.929f green:0.110f blue:0.141f alpha:1.00f];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     UIImageView *titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"NavLogo.png"]];
     [self.navigationItem setTitleView:titleView];
 }

@@ -58,6 +58,8 @@
 		2E743A2A1A18ED00002C34A2 /* NavIcon_Camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A281A18ED00002C34A2 /* NavIcon_Camera@2x.png */; };
 		2E743A2D1A18ED66002C34A2 /* button-signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A2B1A18ED66002C34A2 /* button-signin@2x.png */; };
 		2E743A2E1A18ED66002C34A2 /* button-signout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A2C1A18ED66002C34A2 /* button-signout@2x.png */; };
+		2E743A311A18EE1D002C34A2 /* scan-button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A2F1A18EE1D002C34A2 /* scan-button-pressed@2x.png */; };
+		2E743A321A18EE1D002C34A2 /* scan-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E743A301A18EE1D002C34A2 /* scan-button@2x.png */; };
 		F85B4AA4F0B963CE336759E9 /* libPods-mobilehealthid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +134,8 @@
 		2E743A281A18ED00002C34A2 /* NavIcon_Camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavIcon_Camera@2x.png"; sourceTree = "<group>"; };
 		2E743A2B1A18ED66002C34A2 /* button-signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-signin@2x.png"; sourceTree = "<group>"; };
 		2E743A2C1A18ED66002C34A2 /* button-signout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-signout@2x.png"; sourceTree = "<group>"; };
+		2E743A2F1A18EE1D002C34A2 /* scan-button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button-pressed@2x.png"; sourceTree = "<group>"; };
+		2E743A301A18EE1D002C34A2 /* scan-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan-button@2x.png"; sourceTree = "<group>"; };
 		7E5407205DAEC173493DD93F /* libPods-mobilehealthid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobilehealthid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFDE43264A5F523C709F4B5 /* Pods-mobilehealthid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.release.xcconfig"; sourceTree = "<group>"; };
 		FC840A8F83EF583279C2ACB7 /* Pods-mobilehealthid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilehealthid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobilehealthid/Pods-mobilehealthid.debug.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 				2E743A2C1A18ED66002C34A2 /* button-signout@2x.png */,
 				2E743A271A18ED00002C34A2 /* NavIcon_Camera.png */,
 				2E743A281A18ED00002C34A2 /* NavIcon_Camera@2x.png */,
+				2E743A2F1A18EE1D002C34A2 /* scan-button-pressed@2x.png */,
+				2E743A301A18EE1D002C34A2 /* scan-button@2x.png */,
 				2E743A231A18ECF7002C34A2 /* NavIcon_Info.png */,
 				2E743A241A18ECF7002C34A2 /* NavIcon_Info@2x.png */,
 				2E743A1F1A18EC4D002C34A2 /* results-arrow.png */,
@@ -437,7 +443,9 @@
 				2E743A2D1A18ED66002C34A2 /* button-signin@2x.png in Resources */,
 				2E743A1A1A18EC2D002C34A2 /* results-icon-doctor@2x.png in Resources */,
 				2E7439A41A17A391002C34A2 /* LaunchScreen.xib in Resources */,
+				2E743A311A18EE1D002C34A2 /* scan-button-pressed@2x.png in Resources */,
 				2E743A211A18EC4D002C34A2 /* results-arrow.png in Resources */,
+				2E743A321A18EE1D002C34A2 /* scan-button@2x.png in Resources */,
 				2E743A2A1A18ED00002C34A2 /* NavIcon_Camera@2x.png in Resources */,
 				2E743A291A18ED00002C34A2 /* NavIcon_Camera.png in Resources */,
 				2E7439C61A17F95F002C34A2 /* MobileHealthIDViewController.xib in Resources */,
